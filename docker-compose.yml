@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  nginx:
+    build: ./nginx
+    image: can0ncan/kungfury-proxy
+    container_name: kungfury-proxy
+    ports:
+      - 80:80
+      - 443:443
